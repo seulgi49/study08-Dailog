@@ -61,11 +61,11 @@ dialog.show(getSupportFragmentManager(), "SampleDialogFragment");
 ### AlertDiaolg 빌드
 AlertDiaolg에는 세 가지 영역이 있다.  
 ![**AlertDialog Detail 01 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/alert_dialog_detail.png?raw=true)  
-1. **제목 영역**
+1. **제목 영역**  
 	제목 영역에는 아이콘과 제목 문자열을 설정할 수 있다. 제목이 필요하지 않은 경우, 제목 문자열을 설정하지 않으면 된다.
-2. **내용 영역**
+2. **내용 영역**  
 	단순한 문자열이나 리스트 형태도 설정 가능하다.
-3. **버튼 영역**
+3. **버튼 영역**  
 	세 가지 버튼을 추가할 수 있다.
 
 AlertDialog.Builder 클래스가 AlertDialog를 생성할 수 있게 해주는 API를 제공하며, 여기에 사용자 지정 레이아웃도 포함된다.
