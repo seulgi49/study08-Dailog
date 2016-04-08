@@ -62,9 +62,9 @@ dialog.show(getSupportFragmentManager(), "SampleDialogFragment");
 AlertDiaolg에는 세 가지 영역이 있다.  
 ![**AlertDialog Detail 01 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/alert_dialog_detail.png?raw=true)  
 1. **제목 영역**  
-	제목 영역에는 아이콘과 제목 문자열을 설정할 수 있다. 제목이 필요하지 않은 경우, 제목 문자열을 설정하지 않으면 된다.
+	제목 영역에는 아이콘과 제목 문자열을 설정할 수 있다. 제목이 필요하지 않은 경우, 제목 문자열을 설정하지 않으면 된다.  
 2. **내용 영역**  
-	단순한 문자열이나 리스트 형태도 설정 가능하다.
+	단순한 문자열이나 리스트 형태도 설정 가능하다.  
 3. **버튼 영역**  
 	세 가지 버튼을 추가할 수 있다.
 
