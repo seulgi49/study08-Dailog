@@ -49,7 +49,7 @@ public class SampleDialogFragment extends DialogFragment{
 }
 ```
 
-![**다이얼로그 이미지 01**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/sample_dialog.PNG?raw=true)
+![**다이얼로그 이미지 01**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/sample_dialog.PNG?raw=true)  
 이 클래스의 인스턴스를 생성하고 해당 객체에서 show()를 호출하면 위와 같은 다이얼로그가 나타난다.
 ```java
 // MainActivity에 다음의 코드를 추가하여 다이얼로그를 띄운다
@@ -59,8 +59,8 @@ dialog.show(getSupportFragmentManager(), "SampleDialogFragment");
 (두 번째 인수 "SampleDialogFragment"는 프래그먼트의 고유한 태그 이름이다. 시스템이 필요에 따라 프래그먼트의 상태르르 저장하고 복원하는 데 사용한다. findFragmentByTag()를 호출해서 해당 프래그먼트를 파악할 수 있다.)
 
 ### AlertDiaolg 빌드
-AlertDiaolg에는 세 가지 영역이 있다.
-![**AlertDialog Detail 01 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/alert_dialog_detail.png?raw=true)
+AlertDiaolg에는 세 가지 영역이 있다.  
+![**AlertDialog Detail 01 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/alert_dialog_detail.png?raw=true)  
 1. **제목 영역**
 	제목 영역에는 아이콘과 제목 문자열을 설정할 수 있다. 제목이 필요하지 않은 경우, 제목 문자열을 설정하지 않으면 된다.
 2. **내용 영역**
@@ -115,8 +115,8 @@ AlertDiaolg에 추가할 수 있는 리스트는 세 가지 종류가 있다.
 - 일반적인 단일 선택 리스트
 - 라디오 버튼이 있는 단일 선택 리스트
 - 체크 박스가 있는 복수 선택 리스트
-
-![**single_choice_01 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/single_choice.PNG?raw=true)
+  
+![**single_choice_01 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/single_choice.PNG?raw=true)  
 위와 같이 구현하려면 setItems()를 사용하면 된다.
 ```java
 @Override
@@ -138,7 +138,7 @@ public Dialog onCreateDialog(Bundle savedInstanceState) {
 이 때, 목록을 선택하면 onDismiss()가 호출돼서 다이얼로그를 무시하게 된다. 이렇게 되는 것을 원하지 않으면 라디오 버튼이나 체크박스가 있는 리스트를 추가하면 된다.
 
 ### 다중 선택 목록 추가
-![다중선택목록 이미지](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/multiple_choice.PNG?raw=true)
+![다중선택목록 이미지](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/multiple_choice.PNG?raw=true)  
 다중 선택 목록(with 체크박스)을 추가하려면 setMultiChoiceItems()를 사용한다.  
 (라디오 버튼이 있는 단일 선택 목록은 setSingleChoiceItems()를 사용한다)
 ```java
@@ -285,9 +285,9 @@ public Dialog onCreateDialog(Bundle savedInstanceState) {
 ### 커스텀 다이얼로그
 다이얼로그에서 커스텀 레이아웃을 원하는 경우, 레이아웃을 생성한 다음 이를 AlertDialog에 추가하면 된다. 이 때 AlerDialog.Builder 객체의 setView()를 호출하는 방법을 쓴다.
 
-기본적으로 커스텀 레이아웃이 다이얼로그를 가득 채우지만 필요하다면 AlertDialog.Builder 메소드를 사용해서 버튼과 제목을 추가할 수 있다.
+기본적으로 커스텀 레이아웃이 다이얼로그를 가득 채우지만 필요하다면 AlertDialog.Builder 메소드를 사용해서 버튼과 제목을 추가할 수 있다.  
 
-![**custom_dialog 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/custom_dailog.PNG?raw=true)
+![**custom_dialog 이미지**](https://github.com/seulgi49/study08-Dialog/blob/master/chap08/custom_dailog.PNG?raw=true)  
 위 이미지와 같이 레이아웃을 생성하자.
 ```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
