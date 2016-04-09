@@ -21,8 +21,8 @@
 3. **수정의 용이성** : 한 곳에서 수정을 하면 앱 전반에 자동으로 적용이 되므로 수정이 쉽다.
 
 
-## Style
-### Style 생성하기
+# Style
+## Style 생성하기
 프로젝트 내 res/value/styles.xml에 설정한다.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -42,7 +42,7 @@
 
 일반적으로 안드로이드의 표준 스타일 리소스를 상속받은 뒤, 변경하고 싶은 부분만 바꾸어주는 방식을 사용한다.
 
-#### Style 상속
+### Style 상속
 `<style>`의 parent 속성을 이용해 이전에 설정해둔 스타일 속성을 상속받을 수 있다.
 ```xml
 <style name="LargeFont">
@@ -72,7 +72,7 @@ LargePinkFont는 parent 속성으로 LargeFont를 상속받음으로써 textSize
 
 
 
-### Style 적용하기
+## Style 적용하기
 ```xml
 <TextView
     style="@style/CodeFont"
@@ -80,8 +80,8 @@ LargePinkFont는 parent 속성으로 LargeFont를 상속받음으로써 textSize
 ```
 적용할 엘리먼트의 style 속성을 이용해 지정한다.
 
-## Theme
-### Theme 생성하기
+# Theme
+## Theme 생성하기
 프로젝트 내 res/value/styles.xml에 설정한다.
 
 ```xml
@@ -104,7 +104,7 @@ LargePinkFont는 parent 속성으로 LargeFont를 상속받음으로써 textSize
 
 name 값에 의해 특정 `<item>`을 참조하면서 수행되어진다. 예를 들면 panelTextColor는 현재 테마에 존재하는 panelForegroundColor 값을 사용한다는 의미가 된다. 
 
-### Theme 적용하기
+## Theme 적용하기
 테마는 앱 전체에 설정하거나 Activity 단위로 설정 하기 때문에 매니페스트 파일에서 적용이 이루어진다.
 
 - 앱 전체에 테마 적용하기
@@ -134,7 +134,7 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 하지만 대부분의 경우 화면에 테마 적용을 하는 일은 XML에서 하는 것이 유리하며, 권고사항이다.
 
-### AppTheme을 수정하면
+## AppTheme을 수정하면
 ```xml
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
